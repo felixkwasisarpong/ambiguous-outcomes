@@ -44,7 +44,7 @@ mismatch, authorization, budgets, deadlines and deterministic repeatability.
 
 ## Scope and limitations
 
-The suite currently has 78 unit tests. These are hand-designed simulator checks,
+The suite currently has 87 unit tests. These are hand-designed simulator checks,
 not a representative production benchmark or empirical comparison of AI models.
 There is no claim of a new method or production reliability.
 
@@ -179,8 +179,9 @@ full comparison. V1 and v2 remain unchanged. The five known regressions were
 explicit development targets and passed focused tests before this freeze.
 
 The [first full comparison](comparison-v3-results.json) meets the predeclared
-no-regression goal on this test set. The subsequent full repeat had execution
-timeouts, so complete-run reproducibility is **not yet established**:
+no-regression goal on this test set. An early full repeat had execution
+timeouts; the later runtime audit obtained two exact full repeats under unchanged
+limits (see the runtime audit below):
 
 - Baseline: **104 verified completions**, **767 reserved calls**.
 - Key-first candidate: **125 verified completions**, **687 reserved calls**.
@@ -214,8 +215,9 @@ passing or identical full repeat.
 [Targeted replays](comparison-v3-timeout-rechecks.json) of all three timeout cases
 then matched the first-run rows exactly under unchanged code and limits. These
 replays support the functional results but do not replace a successful full
-reproducibility run. The cause of the intermittent execution timeouts remains
-unresolved. The new policy remains experimental; no production promotion follows.
+reproducibility run. The historical cause of the intermittent timeouts remains unconfirmed. Later
+full repeats passed, as documented below. The policy remains experimental; no
+production promotion follows.
 
 
 Hybrid leaves 157 cases without verified completion. The cases use fictional
@@ -223,13 +225,51 @@ service tickets, permanent keys, truthful contracts and a virtual clock. This is
 evidence about the simulator and selected cases, not production reliability,
 optimality or a publishable novelty claim. No existing policy was replaced.
 
+## Runtime audit and clean full repeats
+
+The [audit procedure](RUNTIME_AUDIT.md) and diagnostic code were committed in
+`dad61c9` before collecting the diagnostic runs. Frozen policies, cases, scorer,
+SQLite settings, virtual deadlines, budgets and the **15-second process timeout**
+were unchanged. No new evaluation limit was introduced.
+
+The [targeted probes](runtime-targeted.json) cover four historically affected cases
+with three paired original/traced repetitions: **24 episodes, 48 worker launches**.
+Every episode exactly matched its original successful result and none timed out.
+The slowest launch was **139.10 ms**. Tracing separates first-observable Python
+startup, imports, journal operations and service operations. Events are written
+unbuffered and preserved on timeout; intentional crash exits remain distinct.
+
+Two sequential full runs then passed all checks:
+
+- [Full run 1](runtime-full-1.json): **741 launches, zero timeouts**, maximum wall
+  time **3,684.87 ms**; [timings](runtime-full-1-timings.json).
+- [Full run 2](runtime-full-2.json): **741 launches, zero timeouts**, maximum wall
+  time **3,824.78 ms**; [timings](runtime-full-2-timings.json).
+- Both complete behavioral reports match each other and the first successful v3
+  report **byte for byte**. Timing reports are separate and naturally differ.
+- The v3 provenance remains explicit: each full run freshly executes hybrid on
+  all 288 cases and each previous policy on the 72 new cases, reusing 216 verified
+  historical rows per previous policy.
+
+The slowest full-run workers used about 402 ms and 312 ms of child CPU respectively,
+versus 3.68 s and 3.82 s of elapsed time. This shows substantial non-CPU time in
+those launches; it does **not** identify scheduling, I/O, suspension or another
+specific historical cause. The original 15-second stalls were not reproduced.
+No controller defect or root-cause fix is claimed from their absence.
+
+The clean-repeat requirement is now met under the original limits. Earlier failed
+attempts remain in the repository. These runs do not guarantee future freedom
+from intermittent host stalls. Diagnostics provide evidence for any recurrence.
+All **87 unit tests** pass, including partial-timeout trace preservation, immutable
+output files, CPU/wall-clock separation and distinction between crashes/timeouts.
+No external model or API calls were made.
+
 ## Next steps
 
-Keep the three versions frozen. First investigate the intermittent worker
-timeouts and obtain a clean full repeat. Then add evaluation under less idealized service
-contracts and realistic timing in a separate version, and identify where the
-remaining noncompletions are unavoidable versus policy-dependent. Use an
-independently implemented service or outside review before treating simulator
-findings as general evidence. Only then decide whether a model-assisted policy
-can add value beyond these deterministic controls; paid runs need an explicit
-spending limit.
+Keep the three evaluation versions frozen and retain timing diagnostics for any
+recurrence. Add evaluation under less idealized service contracts and realistic
+timing in a separate version, and identify where remaining noncompletions are
+unavoidable versus policy-dependent. Use an independently implemented service or
+outside review before generalizing these simulator findings. Decide whether a
+model-assisted policy can add value only after strengthening the deterministic
+controls; paid runs need an explicit spending limit.
