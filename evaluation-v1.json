@@ -1,0 +1,3069 @@
+{
+  "acceptance": {
+    "max_budget_violations": 0,
+    "max_excess_effects": 0,
+    "max_execution_errors": 0,
+    "max_false_successes": 0,
+    "max_wrong_effects": 0,
+    "require_all_completion_controls": true
+  },
+  "cases": [
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-001",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-002",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "completion_control",
+      "id": "eval-v1-003",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "completion_control",
+      "id": "eval-v1-004",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 6
+      },
+      "group": "completion_control",
+      "id": "eval-v1-005",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 6
+      },
+      "group": "completion_control",
+      "id": "eval-v1-006",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-007",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-008",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-009",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-010",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "completion_control",
+      "id": "eval-v1-011",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "completion_control",
+      "id": "eval-v1-012",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 6
+      },
+      "group": "completion_control",
+      "id": "eval-v1-013",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 6
+      },
+      "group": "completion_control",
+      "id": "eval-v1-014",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-015",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-016",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-017",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-018",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "completion_control",
+      "id": "eval-v1-019",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "completion_control",
+      "id": "eval-v1-020",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 6
+      },
+      "group": "completion_control",
+      "id": "eval-v1-021",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 6
+      },
+      "group": "completion_control",
+      "id": "eval-v1-022",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-023",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 128,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "eval-v1-024",
+      "max_calls": 32,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-025",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-026",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-027",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-028",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-029",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-030",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-031",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-032",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 3
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-033",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 14
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-034",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 15
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-035",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 14
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 6,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-036",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-037",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 7
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-038",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-039",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 2
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-040",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-041",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-042",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-043",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-044",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-045",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-046",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-047",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-048",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-049",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-050",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-051",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-052",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 15
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-053",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 14
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-054",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 13
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 6,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-055",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 6
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-056",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-057",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 7
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-058",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-059",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-060",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-061",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-062",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-063",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-064",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-065",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-066",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-067",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-068",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-069",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-070",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-071",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-072",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 8
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 1,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-073",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 10
+      },
+      "crashes": [],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-074",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 1,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-075",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 13
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-076",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 8
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-077",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-078",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 7
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-079",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 11
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-080",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-081",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-082",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-083",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-084",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-085",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-086",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 0
+      },
+      "crashes": [],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-087",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-088",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 0
+      },
+      "crashes": [],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-089",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-090",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-091",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-092",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 14
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-093",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 8
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 1,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-094",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 11
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-095",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 8
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-096",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-097",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 8
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-098",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 8
+      },
+      "crashes": [],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-099",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 9
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-100",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 0
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-101",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-102",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 4
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-103",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": false,
+        "settlement_bound": 1
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-104",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-105",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-106",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-107",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-108",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-109",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-110",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-111",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-112",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-113",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 1,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-114",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-115",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 6,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-116",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-117",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-118",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 1
+      },
+      "group": "stress",
+      "id": "eval-v1-119",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-120",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-121",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-122",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-123",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-124",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-125",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-126",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-127",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-128",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_service_commit",
+        "during_service_commit"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-129",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_service_commit",
+        "after_service_commit"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-130",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-131",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-132",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 6,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-133",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_prepare",
+        "before_prepare"
+      ],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 4,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-134",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 8,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-135",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_dispatch"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-136",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-137",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 7
+      },
+      "group": "stress",
+      "id": "eval-v1-138",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 5
+      },
+      "group": "stress",
+      "id": "eval-v1-139",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 3
+      },
+      "group": "stress",
+      "id": "eval-v1-140",
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_confirmation"
+      ],
+      "deadline": 11,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-141",
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-142",
+      "max_calls": 3,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 1,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-143",
+      "max_calls": 7,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crashes": [],
+      "deadline": 23,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "stress",
+      "id": "eval-v1-144",
+      "max_calls": 12,
+      "must_complete": false
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Separately specified synthetic cases; same simulator and author as development",
+  "seed": 20261013
+}

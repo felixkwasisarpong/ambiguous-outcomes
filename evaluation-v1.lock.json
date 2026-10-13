@@ -1,0 +1,12 @@
+{
+  "rule": "Freeze before baseline execution; changes require a new evaluation version",
+  "schema_version": 1,
+  "source_sha256": {
+    "EVALUATION.md": "b7f82ab27608aabe7f2175d43505cc6350f92d23f22e9ef6bc8177079b4c0b54",
+    "durable.py": "99638d558d111aac29d09667b4622dc2dd4bfc829a9e403ac95034d8cbb1250a",
+    "evaluation-v1.json": "218c4e0158a7eaf76c0d091c8e4980f8abdd57b65ec810a0eb34baff9722510c",
+    "evaluation.py": "6a3200ee1ae30c61f1a35f33e705aa66afe3b0b942d1721ebbd3e0d2a2c67ac2",
+    "smoke.py": "fca44296acfdf30b226e4257ce21487daafe6e951d606d18e99d7b38c96b3351",
+    "test_evaluation.py": "ea53a63b8fa784e42a5b2d9a88aeb9bab9ed844d3df736887a5cb81f0688631a"
+  }
+}
