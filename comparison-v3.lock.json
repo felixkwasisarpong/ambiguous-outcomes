@@ -1,0 +1,11 @@
+{
+  "source_sha256": {
+    "COMPARISON_V3.md": "92155de5ee6250b3b577e20c459c253dad6c76d9700eef8d2d247a44e2299cc9",
+    "comparison-results.json": "13cac10ba3d173fce8e8c52caf6ae95fd5d57158502776ef4ea167b26f2e321a",
+    "comparison-v2.lock.json": "a99a417e1d2c6efe2146ffdb55e87967c81b34fa869524be6c07ce32905d00c1",
+    "comparison-v3.json": "9944a445c772e32d8b4ab6835a995b6ed7b016cb115304106d21c658e996f473",
+    "comparison3.py": "bab344fc11783b065af0f1c6c9c4a99fbda0455378e307dc63b8064edf23f110",
+    "hybrid.py": "84163eb89ee207f452a731464fdf4f2942f73e8aab9ed47fee64812f94dafaf1",
+    "test_hybrid.py": "615fa78b417b30fd424c8df18e564b7b3f1a24cc50fe4024f00a29609921e04c"
+  }
+}
