@@ -1,0 +1,766 @@
+{
+  "external_api_calls": 0,
+  "fixtures": [
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "before_prepare",
+      "report": {
+        "observations": [],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 1
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "after_prepare",
+      "report": {
+        "observations": [],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 1
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "before_dispatch",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "missing"
+          },
+          {
+            "kind": "wait",
+            "value": "5"
+          },
+          {
+            "kind": "lookup",
+            "value": "missing"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 5
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "during_service_commit",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "missing"
+          },
+          {
+            "kind": "wait",
+            "value": "5"
+          },
+          {
+            "kind": "lookup",
+            "value": "missing"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 5
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "after_service_commit",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 2
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "after_dispatch",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 2
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "before_confirmation",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 2
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "during_confirmation",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 2
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "fixture": "after_confirmation",
+      "report": {
+        "observations": [
+          {
+            "kind": "journal",
+            "value": "Previously confirmed result"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 1
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "fixture": "restart_pending_idempotent",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "missing"
+          },
+          {
+            "kind": "wait",
+            "value": "5"
+          },
+          {
+            "kind": "lookup",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 4
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 4,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "fixture": "restart_pending_opaque",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "missing"
+          },
+          {
+            "kind": "wait",
+            "value": "5"
+          },
+          {
+            "kind": "lookup",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 4
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 5,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": 5
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 5,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "fixture": "restart_dropped_opaque",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "missing"
+          },
+          {
+            "kind": "wait",
+            "value": "5"
+          },
+          {
+            "kind": "lookup",
+            "value": "missing"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 5
+    },
+    {
+      "at_stop": {
+        "committed_effects": 0,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": false,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": false,
+        "lookup": true,
+        "settlement_bound": null
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": false,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "fixture": "restart_unknown_opaque",
+      "report": {
+        "observations": [
+          {
+            "kind": "lookup",
+            "value": "missing"
+          }
+        ],
+        "status": "unresolved",
+        "ticket_id": null
+      },
+      "reserved_calls": 2
+    },
+    {
+      "at_stop": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": {
+        "idempotent": true,
+        "lookup": false,
+        "settlement_bound": null
+      },
+      "crash_exit": 73,
+      "eventual": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "fixture": "restart_key_without_lookup",
+      "report": {
+        "observations": [],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      },
+      "reserved_calls": 2
+    }
+  ],
+  "model_calls": 0,
+  "schema_version": 1,
+  "scope": "Deterministic process-exit recovery fixtures; not power-loss or distributed validation",
+  "source_sha256": {
+    "durable.py": "99638d558d111aac29d09667b4622dc2dd4bfc829a9e403ac95034d8cbb1250a",
+    "smoke.py": "fca44296acfdf30b226e4257ce21487daafe6e951d606d18e99d7b38c96b3351",
+    "test_durable.py": "bc6ffbd03aa00c4379a9fe8149c4af1bff847073d34527783b2b84f636a317cc"
+  }
+}
