@@ -16,6 +16,7 @@ python3 -B -m unittest -v
 python3 -B smoke.py > results.json
 python3 -B delayed.py > delayed-results.json
 python3 -B durable.py > durable-results.json
+python3 -B evaluation.py > evaluation-results.json
 ```
 
 ## Experiments
@@ -41,7 +42,7 @@ mismatch, authorization, budgets, deadlines and deterministic repeatability.
 
 ## Scope and limitations
 
-The suite currently has 48 unit tests. These are hand-designed simulator checks,
+The suite currently has 58 unit tests. These are hand-designed simulator checks,
 not a representative production benchmark or empirical comparison of AI models.
 There is no claim of a new method or production reliability.
 
@@ -95,9 +96,39 @@ confirmed in the journal can be returned after the deadline. Budgets count publi
 create, lookup and wait calls, not local clock or journal reads. API isolation is
 logical; this is a research harness, not a production workflow engine.
 
+## Frozen evaluation v1
+
+The [protocol](EVALUATION.md), [144 cases](evaluation-v1.json), independent scorer
+and [source lock](evaluation-v1.lock.json) were committed in `f444f99` before the
+first full baseline execution. The baseline implementation was unchanged. The
+cases are separate from the development fixtures but share the same simulator
+and author; this is not an externally authored or blinded benchmark.
+
+The [recorded results](evaluation-results.json) passed the predefined gates:
+
+- Completion controls: **24 of 24** verified completions.
+- Stress cases: **35 of 120** verified completions, 71 budget/deadline stops and
+  14 unresolved outcomes.
+- All 144 cases: **zero** excess effects, wrong effects, false success reports,
+  budget violations or execution errors.
+- **123 actual process crashes**, with two crashes reached in 41 cases. Another
+  66 requested crash points were not reached and are reported separately.
+
+A second complete run produced byte-for-byte identical JSON. All 58 unit tests
+also passed. This establishes reproducibility of these synthetic cases, not a
+production success rate. Passing safety gates does not establish that every
+unresolved case was unavoidable or that the controller is optimal. Resource use
+and missed completions remain useful targets for comparison.
+
+The runner refuses altered frozen inputs and returns a failing exit code if an
+acceptance gate fails. Keep v1 intact; future controller changes require a new
+version for comparison. Now that v1 has been inspected, it is a regression set,
+not an untouched holdout. No model calls or external API calls were made.
+
 ## Next steps
 
-Freeze an independent evaluation set beyond the development fixtures, including
-repeated interruptions, weaker contracts and more varied delays. Define metrics
-and acceptance criteria before comparing a model-assisted controller with this
-deterministic reference implementation. No model has been evaluated yet.
+Analyze resource use and unresolved outcomes, then specify a new comparison
+version before changing policies. Compare deterministic alternatives before
+claiming that model-assisted recovery offers value. A later model experiment
+needs a common tool interface, a fixed evaluation protocol and an explicit
+spending limit. No model has been evaluated yet.
