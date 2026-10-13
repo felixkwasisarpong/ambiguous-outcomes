@@ -1,0 +1,7680 @@
+{
+  "acceptance": {
+    "max_budget_violations": 0,
+    "max_excess_effects": 0,
+    "max_execution_errors": 0,
+    "max_false_successes": 0,
+    "max_wrong_effects": 0,
+    "require_all_completion_controls": true
+  },
+  "cases": [
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-001",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-002",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-003",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-004",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-005",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-006",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-007",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-008",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-009",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-010",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-011",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": false,
+        "visibility_delay": 0
+      },
+      "group": "completion_control",
+      "id": "retention-v1-012",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": true
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-013",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-014",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-015",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-016",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-017",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-018",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-019",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-020",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-021",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-022",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-023",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-024",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-025",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-026",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-027",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-028",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-029",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-030",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-031",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-032",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-033",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-034",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-035",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-036",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-037",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-038",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-039",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-040",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-041",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-042",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-043",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-044",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-045",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-046",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-047",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-048",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-049",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-050",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-051",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-052",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-053",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-054",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-055",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-056",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-057",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-058",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-059",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-060",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-061",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-062",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-063",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-064",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-065",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-066",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-067",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-068",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-069",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-070",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-071",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-072",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-073",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-074",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-075",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-076",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-077",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-078",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-079",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-080",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-081",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-082",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-083",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": null,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "permanent_key_stress",
+      "id": "retention-v1-084",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-085",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-086",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-087",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-088",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-089",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-090",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-091",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-092",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-093",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-094",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-095",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-096",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-097",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-098",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-099",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-100",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-101",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-102",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-103",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-104",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-105",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-106",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-107",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-108",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-109",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-110",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-111",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-112",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-113",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-114",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-115",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-116",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-117",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-118",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-119",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-120",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-121",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-122",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-123",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-124",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-125",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-126",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-127",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-128",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-129",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-130",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-131",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-132",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-133",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-134",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-135",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-136",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-137",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-138",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-139",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-140",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-141",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-142",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-143",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-144",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-145",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-146",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-147",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-148",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-149",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-150",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-151",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-152",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-153",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-154",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-155",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-156",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-157",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-158",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-159",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-160",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-161",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-162",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-163",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-164",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-165",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-166",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-167",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-168",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-169",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-170",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-171",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-172",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-173",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-174",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-175",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-176",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-177",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-178",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-179",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-180",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-181",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-182",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-183",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-184",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-185",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-186",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-187",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-188",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-189",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-190",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-191",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-192",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-193",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-194",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-195",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-196",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-197",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-198",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-199",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-200",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-201",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-202",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-203",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-204",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-205",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-206",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-207",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-208",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-209",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-210",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-211",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-212",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-213",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-214",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-215",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-216",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-217",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-218",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-219",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-220",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-221",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 0,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-222",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 0,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-223",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-224",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 3,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-225",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 5,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-226",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-227",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 6,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 9,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "finite_key_stress",
+      "id": "retention-v1-228",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 0,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "resource_boundary",
+      "id": "retention-v1-229",
+      "latency": 1,
+      "max_calls": 0,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 0,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "resource_boundary",
+      "id": "retention-v1-230",
+      "latency": 1,
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 1,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "resource_boundary",
+      "id": "retention-v1-231",
+      "latency": 1,
+      "max_calls": 0,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 3,
+        "lookup": false,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch"
+      ],
+      "deadline": 1,
+      "downtime": 6,
+      "fault": {
+        "commit_delay": 3,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "resource_boundary",
+      "id": "retention-v1-232",
+      "latency": 1,
+      "max_calls": 1,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-001",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-002",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-003",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-004",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-005",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-006",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-007",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-008",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-009",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-010",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-011",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-012",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-013",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-014",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-015",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-016",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-017",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-018",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-019",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-020",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-021",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-022",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-023",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-024",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-025",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-026",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-027",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-028",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-029",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-030",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-031",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-032",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-033",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-034",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-035",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 2,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-036",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-037",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-038",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-039",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-040",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-041",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-042",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-043",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-044",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-045",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-046",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-047",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-048",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-049",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-050",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-051",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-052",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-053",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": null
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-054",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-055",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-056",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-057",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-058",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-059",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-060",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-061",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-062",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 1,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-063",
+      "latency": 0,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-064",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-065",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-066",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-067",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-068",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 2,
+        "drop_request": false,
+        "lose_reply": true,
+        "visibility_delay": 2
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-069",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "before_dispatch",
+        "before_dispatch"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-070",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "after_dispatch",
+        "after_absence"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-071",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    },
+    {
+      "contract": {
+        "idempotent": true,
+        "key_ttl": 5,
+        "lookup": true,
+        "max_request_latency": 2,
+        "settlement_bound": 5
+      },
+      "crashes": [
+        "during_confirmation",
+        "during_confirmation"
+      ],
+      "deadline": 20,
+      "downtime": 2,
+      "fault": {
+        "commit_delay": 0,
+        "drop_request": true,
+        "lose_reply": true,
+        "visibility_delay": 0
+      },
+      "group": "new_reconciliation_stress",
+      "id": "reconciliation-v1-072",
+      "latency": 1,
+      "max_calls": 12,
+      "must_complete": false
+    }
+  ],
+  "old_case_count": 232,
+  "scope": "same-author synthetic regression and newly specified stress cases",
+  "targets": [
+    "retention-v1-147",
+    "retention-v1-148",
+    "retention-v1-149",
+    "retention-v1-150",
+    "retention-v1-152",
+    "retention-v1-153",
+    "retention-v1-154",
+    "retention-v1-155",
+    "retention-v1-156",
+    "retention-v1-187",
+    "retention-v1-221",
+    "retention-v1-222",
+    "retention-v1-226",
+    "retention-v1-227",
+    "retention-v1-228"
+  ],
+  "version": "reconciliation-v1"
+}
