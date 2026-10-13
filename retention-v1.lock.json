@@ -1,0 +1,11 @@
+{
+  "source_sha256": {
+    "RETENTION.md": "e5692f27b5371b6e1670b8097ef049139bc775cf5f1848f1b9009dc8685a9acf",
+    "comparison-v3.lock.json": "35e045f720c53ee5fdd125123c51ae7b4c26e3daa27c18f8388326a641a208db",
+    "retention-v1.json": "9b0b2359f36b00704294f870d85895e8777c68d7a98d969c2ba70c2a0e03d210",
+    "retention_eval.py": "d0b13b4bf67c215c95a93ea15c9c2361570f84cd8dd23d970791aba4f8df4825",
+    "retention_policy.py": "3a78d408d18c4b35c20a458796ac744d75c12cf24029c689c1e330eec22b0aa7",
+    "retention_service.py": "ac443bdd1a6633a0aff720e5522b1f96502a7e8f7cfc2501dbbb3916b3595e35",
+    "test_retention.py": "51406b85a00568154e1b49afa75bb4aa24d08aff79f0b5e8756adb0cd9236e7b"
+  }
+}
