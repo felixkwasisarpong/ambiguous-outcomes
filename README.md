@@ -44,14 +44,15 @@ mismatch, authorization, budgets, deadlines and deterministic repeatability.
 
 ## Scope and limitations
 
-The suite currently has 87 unit tests. These are hand-designed simulator checks,
+The suite currently has 114 unit tests. These are hand-designed simulator checks,
 not a representative production benchmark or empirical comparison of AI models.
 There is no claim of a new method or production reliability.
 
-The simulators assume truthful service contracts. They do not model concurrent
-writers, key expiration or untrusted controllers. The original smoke and delayed
-fixtures are in-memory; the durable extension uses separate SQLite databases and
-sequential child processes. The API boundary is logical, not a security sandbox. The delayed
+The simulators assume truthful service contracts and do not model concurrent
+writers or untrusted controllers. The original experiments use permanent keys;
+the finite-retention extension below explicitly models key expiry. The original
+smoke and delayed fixtures are in-memory; the durable extension uses separate
+SQLite databases and sequential child processes. The API boundary is logical, not a security sandbox. The delayed
 controller assumes one writer and initially empty task state. An unresolved
 outcome is not counted as verified completion even if an action actually committed.
 
@@ -264,12 +265,66 @@ All **87 unit tests** pass, including partial-timeout trace preservation, immuta
 output files, CPU/wall-clock separation and distinction between crashes/timeouts.
 No external model or API calls were made.
 
+## Finite retention and elapsed downtime
+
+The [protocol](RETENTION.md), [232 cases](retention-v1.json), new service, guarded
+policy and tests were frozen in `2c7f117` before full execution. Earlier sources
+and results are unchanged. All cases are newly executed with an atomic JSON-file
+service, shared virtual time, finite or permanent keys, request transit delays
+and elapsed downtime between process exits. This is a separate implementation
+by the same author, **not independent external validation** or real-provider data.
+
+The experiment tests a missing assumption: retrying the same key is safe only
+while the provider still guarantees deduplication. Expired keys can create new
+effects even when an earlier action remains pending. `window_guard` checks the
+conservative expiry bound before replay and uses exact readback where possible.
+Negative readback never renews its replay permission in this version.
+
+The [first result](retention-v1-results.json) and [full repeat](retention-v1-repeat.json)
+match **byte for byte**. Each run freshly executes 232 cases for each policy;
+together they contain **928 episodes and 1,796 worker launches**, with zero
+execution errors under the unchanged 15-second timeout. All **114 unit tests**
+pass, including 27 new boundary, crash-recovery and scoring checks.
+
+- The unmodified legacy hybrid reports 228 successes, but ledger verification
+  accepts only **169**. It creates **59 duplicate effects** and makes **59 false
+  success claims** when run outside its permanent-key assumptions.
+- The guarded policy has **168 verified completions**, **zero duplicates**,
+  **zero false success claims**, zero wrong effects and zero budget violations.
+- Both complete all 12 clean controls and all 72 permanent-key stress cases.
+- Paired verified outcomes are **28 gains, 29 losses and 175 ties** for the guard.
+  It uses **444 reserved calls**, versus 481 for the legacy policy.
+- The guard's 64 noncompletions comprise 61 expired-window stops and three
+  budget/deadline stops. In 33 noncompleted cases, exactly one effect eventually
+  exists but was not verified by the policy; those are not counted as successes.
+- Of its 29 paired completion losses, 28 involve a dropped initial request and
+  one a pending request. The guard is deliberately conservative and does not
+  establish that these losses were unavoidable.
+
+The candidate passes its predeclared safety and control gates. The legacy
+finite-key policy does **not** pass safety; its diagnostic failures remain fully
+visible even though they are not an acceptance requirement for the guard. This
+is an assumption-violation demonstration, not a comparison against a competing
+TTL-aware method, and not a general superiority claim.
+
+These results expose a safety/completion tradeoff. They do not establish novelty,
+production reliability or measured AI performance. Provider contracts are truthful,
+clocks are shared, lookup is exact, and there is one writer. Wall-clock drift,
+concurrency, provider outages and changing contracts remain outside this model.
+No model, paid service or external API calls were made.
+
+To reproduce without replacing a saved attempt:
+
+```sh
+python3 -B retention_eval.py --output new-retention-attempt.json
+```
+
 ## Next steps
 
-Keep the three evaluation versions frozen and retain timing diagnostics for any
-recurrence. Add evaluation under less idealized service contracts and realistic
-timing in a separate version, and identify where remaining noncompletions are
-unavoidable versus policy-dependent. Use an independently implemented service or
-outside review before generalizing these simulator findings. Decide whether a
-model-assisted policy can add value only after strengthening the deterministic
-controls; paid runs need an explicit spending limit.
+Keep all published experiments frozen. Investigate the 29 completion losses in a
+new policy version: distinguish when bounded negative readback genuinely proves
+absence from when an outcome remains unknowable, and compare against a separately
+specified TTL-aware baseline. Do not recover completion by silently relaxing the
+expiry guard. Obtain outside review or an independently authored service, and
+check prior work before framing a paper's contribution. Any paid model evaluation
+still needs an explicit spending limit.
