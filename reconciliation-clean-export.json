@@ -1,0 +1,13 @@
+{
+  "comparison_exit_code": 0,
+  "external_independent_validation": false,
+  "full_report_sha256": "44d4254ff2258de84e1893268e5623a79b0fb4312d408cbe23e64d0b31557b65",
+  "matches_first_run_byte_for_byte": true,
+  "python_version": "3.10.0",
+  "same_author_reproduction": true,
+  "source_archive_sha256": "242a7196629bff7c521c8e4d5f25d640d9dfc34ab51b04d2ac70811154945e15",
+  "source_commit": "2b9d380de8703a81763dea7b6a6a309369180d7f",
+  "source_export_excludes_git_and_untracked_files": true,
+  "test_exit_code": 0,
+  "unit_tests": 137
+}

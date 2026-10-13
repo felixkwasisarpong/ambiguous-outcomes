@@ -44,7 +44,7 @@ mismatch, authorization, budgets, deadlines and deterministic repeatability.
 
 ## Scope and limitations
 
-The suite currently has 114 unit tests. These are hand-designed simulator checks,
+The suite currently has 137 unit tests. These are hand-designed simulator checks,
 not a representative production benchmark or empirical comparison of AI models.
 There is no claim of a new method or production reliability.
 
@@ -319,12 +319,77 @@ To reproduce without replacing a saved attempt:
 python3 -B retention_eval.py --output new-retention-attempt.json
 ```
 
-## Next steps
+## Settled-absence recovery
 
-Keep all published experiments frozen. Investigate the 29 completion losses in a
-new policy version: distinguish when bounded negative readback genuinely proves
-absence from when an outcome remains unknowable, and compare against a separately
-specified TTL-aware baseline. Do not recover completion by silently relaxing the
-expiry guard. Obtain outside review or an independently authored service, and
-check prior work before framing a paper's contribution. Any paid model evaluation
-still needs an explicit spending limit.
+The [protocol](RECONCILIATION.md), [304-case manifest](reconciliation-v1.json), new
+journal evidence, candidate and TTL-aware reference were frozen in `2b9d380`
+before the first full run. The original 232 cases are disclosed regression data;
+72 new stress cases cover non-tight transit bounds, unknown settlement bounds and
+repeated crashes. All three policies are freshly executed; no old rows are reused.
+
+The candidate persists both the replay epoch and latest possible dispatch time.
+After expiry, a new attempt requires an exact negative read that starts after the
+latest dispatch plus maximum transit plus the settlement/visibility bound. Budget
+reservation and new dispatch evidence commit atomically before the call. Absence
+proofs are not cached across crashes. The original key, identity, deadline and
+budget remain unchanged. Without lookup, waiting is capped to allow a retry before
+the conservative expiry boundary when possible.
+
+The [first full result](reconciliation-v1-results.json) and
+[clean-export repeat](reconciliation-v1-repeat.json) match **byte for byte**.
+The repeat was executed from a Git archive of the frozen commit, excluding Git
+metadata and untracked workspace files. Its [verification record](reconciliation-clean-export.json)
+includes the source/archive hashes and Python version. All **137 tests** passed
+both in the workspace and the clean export. This is same-author, same-host
+reproduction, not independent external validation.
+
+Across the two runs: **1,824 episodes**, **3,724 worker launches**, zero execution
+errors, and an unchanged 15-second process timeout. Per complete 304-case run:
+
+- Frozen conservative guard: **201 verified completions**, **693 reserved calls**.
+- TTL-aware readback-first reference: **221 verified completions**, **866 calls**.
+- Reconciled candidate: **229 verified completions**, **765 calls**.
+- All three have zero duplicate or wrong effects, false success claims, budget
+  violations or execution errors, and complete all 12 clean controls.
+- On the original 232 cases, the candidate increases verified completions from
+  **168 to 183**, fixes all **15 declared targets**, and loses no old completion.
+  The frozen guard reproduces all 232 historical rows exactly.
+- Across all 304 cases, the candidate gains **28** completions and loses **zero**
+  relative to the old guard, at a cost of 72 additional reserved calls.
+- Against readback-first it has **9 gains, 1 loss and 294 ties**, while using 101
+  fewer reserved calls. This is not case-by-case dominance or a global optimum.
+
+The loss to readback-first is `reconciliation-v1-028`. After repeated pre-dispatch
+crashes, the candidate correctly creates after settled absence, but then waits
+through another settlement window before attempting positive readback. Its
+20-unit deadline is reached. The reference checks immediately and confirms the
+already committed effect at time 18. This limitation remains in the frozen result;
+the candidate is not retrospectively tuned to remove it.
+
+The candidate still leaves **75** cases unverified: 44 expired-window stops, two
+stops with no time-progressing safe replay, eight budget/deadline stops and 21
+unknown-settlement stops. In 41 of these cases one effect eventually exists, but
+it was not verified, so it is not counted as completion. Fourteen old dropped/
+no-lookup losses are not promised recoverable. A focused test constructs identical
+visible histories for dropped and committed-but-reply-lost outcomes after expiry;
+a forced retry duplicates only the committed world. That is a narrow ambiguity
+witness, not proof that all remaining cases are unavoidable.
+
+The new service cases, policies and baseline share an author. Truthful bounded
+contracts, exact lookup, one writer and a shared virtual clock remain assumptions.
+These are synthetic results, not measured AI performance, a novelty finding or
+production evidence. No external API or model calls were made.
+
+## Independent review and next steps
+
+The [independent-review packet](REVIEW.md) includes reproduction commands, safety
+questions, known counterexamples and suggestions for an independently authored
+service. No outside review has occurred, and no review request has been sent.
+Reviewer selection and actual external validation remain pending.
+
+Keep published versions frozen. Prioritize an outside assessment of the latest-
+dispatch absence argument, baseline fairness and service assumptions. Any fix for
+`reconciliation-v1-028` belongs in a new version. Systematic repeated faults,
+concurrency, drift and real provider contracts still need separate evaluations.
+Check relevant prior work before framing a paper's contribution. Paid model runs
+still require an explicit spending limit.
