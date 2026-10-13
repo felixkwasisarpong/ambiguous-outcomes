@@ -17,6 +17,7 @@ python3 -B smoke.py > results.json
 python3 -B delayed.py > delayed-results.json
 python3 -B durable.py > durable-results.json
 python3 -B evaluation.py > evaluation-results.json
+python3 -B comparison.py > comparison-results.json
 ```
 
 ## Experiments
@@ -42,7 +43,7 @@ mismatch, authorization, budgets, deadlines and deterministic repeatability.
 
 ## Scope and limitations
 
-The suite currently has 58 unit tests. These are hand-designed simulator checks,
+The suite currently has 68 unit tests. These are hand-designed simulator checks,
 not a representative production benchmark or empirical comparison of AI models.
 There is no claim of a new method or production reliability.
 
@@ -125,10 +126,55 @@ acceptance gate fails. Keep v1 intact; future controller changes require a new
 version for comparison. Now that v1 has been inspected, it is a regression set,
 not an untouched holdout. No model calls or external API calls were made.
 
+## Paired deterministic comparison v2
+
+The [comparison protocol](COMPARISON.md), candidate policy, runner and
+[216 cases](comparison-v2.json) were frozen in `a0b7236` before the first full
+paired run. All v1 implementation and specification files remain unchanged.
+
+The investigation classified the 85 original incomplete cases by observed stop:
+38 reached their deadline, 35 used their call budget, and 12 were policy
+abstentions under the specified precedence. The report retains overlapping flags;
+these categories do not establish that completion was impossible.
+
+The candidate in `strategies.py` tries a safe same-key replay before waiting when
+the contract provides episode-long idempotency. It retains the original submission
+time across replays. Non-idempotent operations use the original controller.
+
+The [clean paired results](comparison-results.json) show:
+
+- Baseline: **79 verified completions**, **559 reserved calls**.
+- Key-first candidate: **95 verified completions**, **497 reserved calls**.
+- Paired outcomes: **21 gains, 5 losses, 190 ties**.
+- Both completed all **24 completion controls** with zero excess/wrong effects,
+  false success reports, budget violations or execution errors.
+- In 61 cases with no requested crashes: **6 gains, no losses, 55 ties**.
+- In 155 cases with requested crashes: **15 gains, 5 losses, 135 ties**.
+
+Four regressions arise after repeated pre-dispatch crashes with unknown settlement
+bounds: the candidate abstains after one timed-out replay despite remaining
+recovery options. One regression arises because a replay reaches a service-commit
+crash hook and consumes the remaining budget; the baseline uses lookup and never
+reaches that hook. Thus identical requested schedules need not produce identical
+actual crashes. The candidate is an experimental alternative, not a replacement.
+
+The [first attempt](comparison-attempt-1.json) is retained: one baseline worker
+hit the unchanged 15-second process timeout on `eval-v1-064`, causing the execution
+and baseline-reproduction gates to fail. The unchanged rerun passed; only that
+baseline row differed and all candidate rows matched. A further complete run
+produced byte-for-byte identical JSON to the clean comparison. The successful comparison
+exactly reproduces every original v1 baseline row. All **68 unit tests** pass.
+
+These are simulator results with known, permanent idempotency guarantees. They
+are not production rates, AI performance evidence or proof of novelty. The original
+144 cases are regression cases; the 72 newly specified cases share the same author
+and simulator. No models or external services were called.
+
 ## Next steps
 
-Analyze resource use and unresolved outcomes, then specify a new comparison
-version before changing policies. Compare deterministic alternatives before
-claiming that model-assisted recovery offers value. A later model experiment
-needs a common tool interface, a fixed evaluation protocol and an explicit
-spending limit. No model has been evaluated yet.
+Keep v1 and v2 frozen. Specify a third policy that retains safe key replays but
+avoids premature abstention and uses readback where useful. Freeze that comparison
+before executing it, and retain all five v2 losses as regression cases. Consider
+model assistance only after establishing what stronger deterministic policies can
+achieve under the same budgets. Any paid experiment needs an explicit spending
+limit.
