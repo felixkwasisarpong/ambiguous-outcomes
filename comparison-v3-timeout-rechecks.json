@@ -1,0 +1,232 @@
+{
+  "cases": [
+    {
+      "id": "eval-v1-058",
+      "matches_first_run": true,
+      "result": {
+        "at_stop": {
+          "committed_effects": 1,
+          "excess_effects": 0,
+          "false_success": false,
+          "safe_verified_completion": true,
+          "wrong_effects": 0
+        },
+        "attempts": [
+          {
+            "crash_reached": true,
+            "exit_code": 73,
+            "requested_crash": "after_dispatch"
+          },
+          {
+            "crash_reached": true,
+            "exit_code": 73,
+            "requested_crash": "after_dispatch"
+          },
+          {
+            "crash_reached": false,
+            "exit_code": 0,
+            "requested_crash": null
+          }
+        ],
+        "budget_violation": false,
+        "committed_effects_ledger": [
+          {
+            "id": "ticket-1",
+            "request": {
+              "intent": "intent-001",
+              "subject": "Replace fictional desk lamp",
+              "tenant": "synthetic-tenant"
+            }
+          }
+        ],
+        "controller_stopped_at": 0,
+        "eventual": {
+          "committed_effects": 1,
+          "excess_effects": 0,
+          "false_success": false,
+          "safe_verified_completion": true,
+          "wrong_effects": 0
+        },
+        "execution_error": null,
+        "group": "stress",
+        "id": "eval-v1-058",
+        "must_complete": false,
+        "report": {
+          "observations": [],
+          "status": "success_observed",
+          "ticket_id": "ticket-1"
+        },
+        "reserved_calls": 3,
+        "service_committed_call_counter": 3
+      }
+    },
+    {
+      "id": "comparison-v3-065",
+      "matches_first_run": true,
+      "result": {
+        "at_stop": {
+          "committed_effects": 0,
+          "excess_effects": 0,
+          "false_success": false,
+          "safe_verified_completion": false,
+          "wrong_effects": 0
+        },
+        "attempts": [
+          {
+            "crash_reached": true,
+            "exit_code": 73,
+            "requested_crash": "before_dispatch"
+          },
+          {
+            "crash_reached": true,
+            "exit_code": 73,
+            "requested_crash": "before_dispatch"
+          },
+          {
+            "crash_reached": false,
+            "exit_code": 0,
+            "requested_crash": null
+          }
+        ],
+        "budget_violation": false,
+        "committed_effects_ledger": [
+          {
+            "id": "ticket-1",
+            "request": {
+              "intent": "intent-001",
+              "subject": "Replace fictional desk lamp",
+              "tenant": "synthetic-tenant"
+            }
+          }
+        ],
+        "controller_stopped_at": 0,
+        "eventual": {
+          "committed_effects": 1,
+          "excess_effects": 0,
+          "false_success": false,
+          "safe_verified_completion": false,
+          "wrong_effects": 0
+        },
+        "execution_error": null,
+        "group": "v3_new_stress",
+        "id": "comparison-v3-065",
+        "must_complete": false,
+        "report": {
+          "observations": [
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            },
+            {
+              "kind": "lookup",
+              "value": "missing"
+            },
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            }
+          ],
+          "status": "budget_or_deadline_exhausted",
+          "ticket_id": null
+        },
+        "reserved_calls": 5,
+        "service_committed_call_counter": 3
+      }
+    },
+    {
+      "id": "comparison-v3-066",
+      "matches_first_run": true,
+      "result": {
+        "at_stop": {
+          "committed_effects": 0,
+          "excess_effects": 0,
+          "false_success": false,
+          "safe_verified_completion": false,
+          "wrong_effects": 0
+        },
+        "attempts": [
+          {
+            "crash_reached": false,
+            "exit_code": 0,
+            "requested_crash": "during_confirmation"
+          }
+        ],
+        "budget_violation": false,
+        "committed_effects_ledger": [
+          {
+            "id": "ticket-1",
+            "request": {
+              "intent": "intent-001",
+              "subject": "Replace fictional desk lamp",
+              "tenant": "synthetic-tenant"
+            }
+          }
+        ],
+        "controller_stopped_at": 0,
+        "eventual": {
+          "committed_effects": 1,
+          "excess_effects": 0,
+          "false_success": false,
+          "safe_verified_completion": false,
+          "wrong_effects": 0
+        },
+        "execution_error": null,
+        "group": "v3_new_stress",
+        "id": "comparison-v3-066",
+        "must_complete": false,
+        "report": {
+          "observations": [
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            },
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            },
+            {
+              "kind": "lookup",
+              "value": "missing"
+            },
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            },
+            {
+              "kind": "lookup",
+              "value": "missing"
+            },
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            },
+            {
+              "kind": "lookup",
+              "value": "missing"
+            },
+            {
+              "kind": "timeout",
+              "value": "No response received"
+            },
+            {
+              "kind": "lookup",
+              "value": "missing"
+            }
+          ],
+          "status": "budget_or_deadline_exhausted",
+          "ticket_id": null
+        },
+        "reserved_calls": 9,
+        "service_committed_call_counter": 9
+      }
+    }
+  ],
+  "external_api_calls": 0,
+  "model_calls": 0,
+  "scope": "Targeted unchanged-input replays of timeout cases; not a complete repeated evaluation",
+  "source_sha256": {
+    "comparison-v3-attempt-2.json": "6acfbe563ad0f92a710adb057e9fb5457db8d1c5be84b983a900b1504a0d123d",
+    "comparison-v3-results.json": "d5b7a7bc72802e4598d1a74040bd1100264b5b92173b5e496101a38ac11e8fd9",
+    "comparison-v3.lock.json": "35e045f720c53ee5fdd125123c51ae7b4c26e3daa27c18f8388326a641a208db"
+  }
+}

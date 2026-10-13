@@ -18,6 +18,7 @@ python3 -B delayed.py > delayed-results.json
 python3 -B durable.py > durable-results.json
 python3 -B evaluation.py > evaluation-results.json
 python3 -B comparison.py > comparison-results.json
+python3 -B comparison3.py > comparison-v3-results.json
 ```
 
 ## Experiments
@@ -43,7 +44,7 @@ mismatch, authorization, budgets, deadlines and deterministic repeatability.
 
 ## Scope and limitations
 
-The suite currently has 68 unit tests. These are hand-designed simulator checks,
+The suite currently has 78 unit tests. These are hand-designed simulator checks,
 not a representative production benchmark or empirical comparison of AI models.
 There is no claim of a new method or production reliability.
 
@@ -170,11 +171,65 @@ are not production rates, AI performance evidence or proof of novelty. The origi
 144 cases are regression cases; the 72 newly specified cases share the same author
 and simulator. No models or external services were called.
 
+## Hybrid recovery comparison v3
+
+The [third protocol](COMPARISON_V3.md), [hybrid policy](hybrid.py), runner and
+[288-case specification](comparison-v3.json) were frozen in `023e1dd` before the
+full comparison. V1 and v2 remain unchanged. The five known regressions were
+explicit development targets and passed focused tests before this freeze.
+
+The [first full comparison](comparison-v3-results.json) meets the predeclared
+no-regression goal on this test set. The subsequent full repeat had execution
+timeouts, so complete-run reproducibility is **not yet established**:
+
+- Baseline: **104 verified completions**, **767 reserved calls**.
+- Key-first candidate: **125 verified completions**, **687 reserved calls**.
+- Hybrid candidate: **131 verified completions**, **725 reserved calls**.
+- Hybrid fixes **all five known regressions**, gains 27 completions over baseline
+  and 6 over key-first, and loses **zero** completions relative to either.
+- All three complete the 24 controls with zero excess/wrong effects, false success
+  reports, budget violations or execution errors.
+- Without requested crashes (93 cases), hybrid gains 11 over baseline and ties
+  key-first on all completions. With requested crashes (195 cases), it gains 16
+  over baseline and 6 over key-first. Actual crash counts remain path-dependent.
+
+Hybrid uses **42 fewer calls than baseline**, but **38 more than key-first**. The
+extra completions therefore have a resource tradeoff; hybrid is not claimed to
+minimize calls. These are reserved tool calls, not measured API prices or tokens.
+
+The comparison reuses the hash-verified historical 216-case results for each
+unchanged policy and runs those policies on 72 fresh cases. Hybrid runs freshly
+on all 288. This provenance is recorded in the report; historical rows are not
+presented as new executions. All **78 unit tests** pass, including request/limit
+mismatch rejection, immutable key/timestamp checks and bounded unknown-outcome
+recovery. No model or external API calls were made.
+
+The [second full attempt](comparison-v3-attempt-2.json) is retained unchanged. It
+hit the fixed 15-second worker timeout on hybrid cases `eval-v1-058`,
+`comparison-v3-065` and `comparison-v3-066`. Every other row matched the first run;
+all five target fixes still passed. This attempt fails the execution-error gate
+and reports a completion loss on the first timed-out case. Do not treat it as a
+passing or identical full repeat.
+
+[Targeted replays](comparison-v3-timeout-rechecks.json) of all three timeout cases
+then matched the first-run rows exactly under unchanged code and limits. These
+replays support the functional results but do not replace a successful full
+reproducibility run. The cause of the intermittent execution timeouts remains
+unresolved. The new policy remains experimental; no production promotion follows.
+
+
+Hybrid leaves 157 cases without verified completion. The cases use fictional
+service tickets, permanent keys, truthful contracts and a virtual clock. This is
+evidence about the simulator and selected cases, not production reliability,
+optimality or a publishable novelty claim. No existing policy was replaced.
+
 ## Next steps
 
-Keep v1 and v2 frozen. Specify a third policy that retains safe key replays but
-avoids premature abstention and uses readback where useful. Freeze that comparison
-before executing it, and retain all five v2 losses as regression cases. Consider
-model assistance only after establishing what stronger deterministic policies can
-achieve under the same budgets. Any paid experiment needs an explicit spending
-limit.
+Keep the three versions frozen. First investigate the intermittent worker
+timeouts and obtain a clean full repeat. Then add evaluation under less idealized service
+contracts and realistic timing in a separate version, and identify where the
+remaining noncompletions are unavoidable versus policy-dependent. Use an
+independently implemented service or outside review before treating simulator
+findings as general evidence. Only then decide whether a model-assisted policy
+can add value beyond these deterministic controls; paid runs need an explicit
+spending limit.
