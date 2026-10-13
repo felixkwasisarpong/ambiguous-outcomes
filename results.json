@@ -1,0 +1,151 @@
+{
+  "external_api_calls": 0,
+  "fixtures": [
+    {
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        },
+        {
+          "id": "ticket-2",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": "no_idempotency_or_status_lookup",
+      "fault": "lose_reply_after_commit",
+      "fixture": "blind_retry_after_commit",
+      "oracle": {
+        "committed_effects": 2,
+        "excess_effects": 1,
+        "false_success": true,
+        "safe_verified_completion": false,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "report": {
+        "observations": [
+          {
+            "kind": "timeout",
+            "value": "No response received"
+          },
+          {
+            "kind": "success",
+            "value": "ticket-2"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-2"
+      }
+    },
+    {
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": "episode_long_idempotency",
+      "fault": "lose_reply_after_commit",
+      "fixture": "same_key_retry_after_commit",
+      "oracle": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": true,
+        "tool_calls": 2,
+        "wrong_effects": 0
+      },
+      "report": {
+        "observations": [
+          {
+            "kind": "timeout",
+            "value": "No response received"
+          },
+          {
+            "kind": "success",
+            "value": "ticket-1"
+          }
+        ],
+        "status": "success_observed",
+        "ticket_id": "ticket-1"
+      }
+    },
+    {
+      "committed_effects_ledger": [],
+      "contract": "no_idempotency_or_status_lookup",
+      "fault": "lose_request_before_commit",
+      "fixture": "opaque_before_commit",
+      "oracle": {
+        "committed_effects": 0,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": false,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "report": {
+        "observations": [
+          {
+            "kind": "timeout",
+            "value": "No response received"
+          }
+        ],
+        "status": "unresolved",
+        "ticket_id": null
+      }
+    },
+    {
+      "committed_effects_ledger": [
+        {
+          "id": "ticket-1",
+          "request": {
+            "intent": "intent-001",
+            "subject": "Replace fictional desk lamp",
+            "tenant": "synthetic-tenant"
+          }
+        }
+      ],
+      "contract": "no_idempotency_or_status_lookup",
+      "fault": "lose_reply_after_commit",
+      "fixture": "opaque_after_commit",
+      "oracle": {
+        "committed_effects": 1,
+        "excess_effects": 0,
+        "false_success": false,
+        "safe_verified_completion": false,
+        "tool_calls": 1,
+        "wrong_effects": 0
+      },
+      "report": {
+        "observations": [
+          {
+            "kind": "timeout",
+            "value": "No response received"
+          }
+        ],
+        "status": "unresolved",
+        "ticket_id": null
+      }
+    }
+  ],
+  "model_calls": 0,
+  "schema_version": 1,
+  "scope": "Four deterministic harness fixtures; not an LLM benchmark or novelty claim",
+  "source_sha256": {
+    "smoke.py": "fca44296acfdf30b226e4257ce21487daafe6e951d606d18e99d7b38c96b3351",
+    "test_smoke.py": "b6ee5528b02df32792be8dd00aedaa65e7e0284fca88ebfd603318e83a2d57f6"
+  }
+}
